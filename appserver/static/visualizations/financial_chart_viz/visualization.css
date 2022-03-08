@@ -1,0 +1,48 @@
+.financial_chart_viz-container {
+    position:relative;
+}
+.financial_chart_viz-chart {
+    margin: 10px;
+    display: block;
+}
+
+.financial_chart_viz-tooltip {
+	width: 120px;
+	height: 80px;
+	position: absolute;
+	display: none;
+	padding: 8px;
+	box-sizing: border-box;
+	font-size: 11px;
+	color: #131722;
+	text-align: left;
+	z-index: 1000;
+	top: 12px;
+	left: 12px;
+	pointer-events: none;
+	border-radius: 2px;
+	background-color: #fff;
+    border: 1px solid #c3cbd4;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.2);
+}
+
+.financial_chart_viz-legend {
+	position: absolute;
+	padding: 10px;
+	top: 10px;
+	z-index: 1;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+.financial_chart_viz-legend-label {
+	margin-right:10px;
+	font-size: 15px;
+}
+
+.financial_chart_viz-bad_data {
+    text-align: center;
+    color: #818d99;
+    line-height: 3;
+}

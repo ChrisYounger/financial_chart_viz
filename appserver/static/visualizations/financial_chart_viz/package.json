@@ -1,0 +1,21 @@
+{
+  "name": "standin",
+  "version": "1.0.0",
+  "description": "Visualization app template. Put a description here.",
+  "main": "visualization.js",
+  "scripts": {
+    "build": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js",
+    "devbuild": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js --progress",
+    "watch": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js -d --watch --progress"
+  },
+  "author": "Splunk",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.15"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "lightweight-charts": "^3.8.0",
+    "tinycolor2": "^1.4.1"
+  }
+}

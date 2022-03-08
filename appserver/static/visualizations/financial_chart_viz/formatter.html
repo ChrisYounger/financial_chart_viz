@@ -1,0 +1,166 @@
+<form class="splunk-formatter-section" section-label="General">
+        <splunk-control-group label="Type" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.type" value="candles">
+                        <option value="area">Area</option>
+                        <option value="line">Line</option>
+                        <option value="bar">Bars</option>
+                        <option value="candles">Candles</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Pan and zoom" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.panzoom" value="on">
+                        <option value="on">On</option>
+                        <option value="off">Off</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Legend" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.legend" value="show">
+                        <option value="hide">Hide</option>
+                        <option value="show">Show</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Tooltip" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.tooltip" value="crosshair">
+                        <option value="hide">Hide</option>
+                        <option value="crosshair">Crosshair</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Last value" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.last_value" value="show">
+                        <option value="hide">Hide</option>
+                        <option value="show">Show</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Value prefix" help="">
+                <splunk-text-input name="{{VIZ_NAMESPACE}}.value_prefix" value="" style="width:64px; vertical-align:top; display:inline-block; flex:none; margin-right:4px;"></splunk-text-input>
+        </splunk-control-group> 
+
+        <splunk-control-group label="Decimal precision" help="">
+                <splunk-text-input name="{{VIZ_NAMESPACE}}.precision" value="" style="width:64px; vertical-align:top; display:inline-block; flex:none; margin-right:4px;"></splunk-text-input>
+        </splunk-control-group> 
+
+</form>
+<form class="splunk-formatter-section" section-label="Axis">
+
+        <splunk-control-group label="Time axis" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.time_axis" value="show">
+                        <option value="hide">Hide</option>
+                        <option value="show">Show</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Value axis" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.value_axis" value="right">
+                        <option value="hide">Hide</option>
+                        <option value="left">Left</option>
+                        <option value="right">Right</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+        <splunk-control-group label="Value axis scale" help="">
+                <splunk-radio-input name="{{VIZ_NAMESPACE}}.value_axis_scale" value="linear">
+                        <option value="linear">Linear</option>
+                        <option value="log">Log</option>
+                        <option value="percentage">Percentage</option>
+                </splunk-radio-input>
+        </splunk-control-group>
+
+</form>
+
+<form class="splunk-formatter-section" section-label="Styling">
+        <splunk-control-group label="Background color" help="">
+                <splunk-select name="{{VIZ_NAMESPACE}}.background_mode" value="auto" style="vertical-align:top; display:inline-block; width:90px; margin-right:10px;">
+                        <option value="auto">Transparent</option>
+                        <option value="static">Manual</option>
+                </splunk-select>
+                <splunk-color-picker name="{{VIZ_NAMESPACE}}.background_color" value="#0178c7" type="splunkCategorical" style="vertical-align:top; display:inline-block; margin-top: -2px;">
+                        <splunk-color>#ffffff</splunk-color>
+                        <splunk-color>#C6C6C6</splunk-color>
+                        <splunk-color>#919191</splunk-color>
+                        <splunk-color>#5E5E5E</splunk-color>
+                        <splunk-color>#000000</splunk-color>
+                        <splunk-color>#53a051</splunk-color>
+                        <splunk-color>#dc4d41</splunk-color>
+                        <splunk-color>#d16f18</splunk-color>
+                        <splunk-color>#009DD9</splunk-color>
+                        <splunk-color>#ebb839</splunk-color>
+                        <splunk-color>#1a9035</splunk-color>
+                        <splunk-color>#b22b32</splunk-color>
+                        <splunk-color>#AF5300</splunk-color>
+                        <splunk-color>#0178c7</splunk-color>
+                        <splunk-color>#ecbc1b</splunk-color>
+                </splunk-color-picker>
+        </splunk-control-group>
+
+        <splunk-control-group label="Line color" help="">
+                <splunk-select name="{{VIZ_NAMESPACE}}.line_mode" value="auto" style="vertical-align:top; display:inline-block; width:90px; margin-right:10px;">
+                        <option value="auto">Auto</option>
+                        <option value="static">Manual</option>
+                </splunk-select>
+                <splunk-color-picker name="{{VIZ_NAMESPACE}}.line_color" value="#0078ff" type="splunkCategorical" style="vertical-align:top; display:inline-block; margin-top: -2px;">
+                        <splunk-color>#ffffff</splunk-color>
+                        <splunk-color>#C6C6C6</splunk-color>
+                        <splunk-color>#919191</splunk-color>
+                        <splunk-color>#5E5E5E</splunk-color>
+                        <splunk-color>#000000</splunk-color>
+                        <splunk-color>#53a051</splunk-color>
+                        <splunk-color>#dc4d41</splunk-color>
+                        <splunk-color>#d16f18</splunk-color>
+                        <splunk-color>#009DD9</splunk-color>
+                        <splunk-color>#ebb839</splunk-color>
+                        <splunk-color>#1a9035</splunk-color>
+                        <splunk-color>#b22b32</splunk-color>
+                        <splunk-color>#AF5300</splunk-color>
+                        <splunk-color>#0178c7</splunk-color>
+                        <splunk-color>#ecbc1b</splunk-color>
+                </splunk-color-picker>
+        </splunk-control-group>
+
+        <splunk-control-group label="Area chart color" help="">
+                <splunk-select name="{{VIZ_NAMESPACE}}.area_top_mode" value="auto" style="vertical-align:top; display:inline-block; width:90px; margin-right:10px;">
+                        <option value="auto">Auto</option>
+                        <option value="static">Manual</option>
+                </splunk-select>
+                <splunk-color-picker name="{{VIZ_NAMESPACE}}.area_top_color" value="#0078ff" type="splunkCategorical" style="vertical-align:top; display:inline-block; margin-top: -2px;">
+                        <splunk-color>#ffffff</splunk-color>
+                        <splunk-color>#C6C6C6</splunk-color>
+                        <splunk-color>#919191</splunk-color>
+                        <splunk-color>#5E5E5E</splunk-color>
+                        <splunk-color>#000000</splunk-color>
+                        <splunk-color>#53a051</splunk-color>
+                        <splunk-color>#dc4d41</splunk-color>
+                        <splunk-color>#d16f18</splunk-color>
+                        <splunk-color>#009DD9</splunk-color>
+                        <splunk-color>#ebb839</splunk-color>
+                        <splunk-color>#1a9035</splunk-color>
+                        <splunk-color>#b22b32</splunk-color>
+                        <splunk-color>#AF5300</splunk-color>
+                        <splunk-color>#0178c7</splunk-color>
+                        <splunk-color>#ecbc1b</splunk-color>
+                </splunk-color-picker>
+        </splunk-control-group>
+
+        <splunk-control-group label="Area chart style" help="">
+                <splunk-select name="{{VIZ_NAMESPACE}}.area_style" value="light">
+                        <option value="light">Weak gradient</option>
+                        <option value="dark">Strong gradient</option>
+                        <option value="solid">Solid</option>
+                </splunk-select>
+        </splunk-control-group>
+
+</form>
+<form class="splunk-formatter-section" section-label="Help">
+        <splunk-control-group label=" " help="">
+                <div style="margin:20px 10px 10px -90px">
+                        <div>The first column of data should be a _time column, followed by one or more series of data. For correct results, the first series column should be pipe-seperated values for open|high|low|close. An optional fifth field for volume. Chart markers can be also provided in the series data.</div>
+
+                        <div style="margin-top:30px;"><a href="/app/financial_chart_viz/documentation" target="_blank">Examples and Documentation</a></div>
+                        <div style="margin-top:40px;">By Chris Younger - <a href="https://splunkbase.splunk.com/apps/#/author/chrisyoungerjds" target="_blank">My other apps</a></div>
+                </div> 
+        </splunk-control-group>
+</form>
