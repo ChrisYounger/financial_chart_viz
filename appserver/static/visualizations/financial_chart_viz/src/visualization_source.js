@@ -48,6 +48,7 @@ function(
                 legend: "show",
                 tooltip: "crosshair",
                 time_axis: "show",
+                panzoom: "on",
                 last_value: "show",
                 value_axis: "right",
                 value_axis_scale: "linear",
