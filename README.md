@@ -6,6 +6,6 @@ Configurable candlestick (OHLC) chart with volume data. Supports mouse pan/zoom,
 Copyright (C) 2022 Chris Younger | <a href="https://splunkbase.splunk.com/app/6335/">Splunkbase</a> | [Source code](https://github.com/ChrisYounger/financial_chart_viz) |  [Bugs or Suggestions](https://github.com/ChrisYounger/financial_chart_viz/issues) | [My Splunk apps](https://splunkbase.splunk.com/apps/#/author/chrisyoungerjds)
 
 
-![screenshot](https://raw.githubusercontent.com/ChrisYounger/financial_chart_viz/master/appserver/static/demo.png)
+![screenshot](https://raw.githubusercontent.com/ChrisYounger/financial_chart_viz/main/appserver/static/demo.png)
 
 Please see the documentation on the Splunkbase application page or use the in-product documentation.
